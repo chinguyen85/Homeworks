@@ -16,7 +16,7 @@ public class GuessName {
                 System.out.println("Congratulations!");
                 break; // Exit the loop if the guess is correct
             } else if (nameGuess.equalsIgnoreCase("stop")) {
-            	System.out.println("You guessed " + i + " times.");
+            	System.out.println("You guessed " + (i-1) + " times.");
                 break; // Exit the loop if the user wants to stop
             }
         } while (true);
