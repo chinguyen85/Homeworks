@@ -16,7 +16,7 @@ public class ArrayAphorisms {
 		int userInput = in.nextInt();
 		
 		// Print the corresponding aphorism
-		System.out.println(aphorisms[userInput]);
+		System.out.println(aphorisms[userInput - 1]);
 
 	}
 
