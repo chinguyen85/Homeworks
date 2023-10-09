@@ -31,10 +31,11 @@ public class AgeApp {
 			{
 				System.out.println("Congratulations! " + "Congratulations! " + "Congratulations!");
 			}
-			if (age >= 40 && age <= 50)
-			{
-				System.out.println("Happy mid-life!");
-			}
+		}
+		
+		if (age >= 40 && age <= 50)
+		{
+			System.out.println("Happy mid-life!");
 		}
 	}
 }
