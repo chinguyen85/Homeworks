@@ -3,21 +3,21 @@ public class CarApp {
 
 	public static void main(String[] args) {
 		Car car1 = new Car();
-		Car car2 = new Car("Volvo", "v40", 25, false);
+		Car car2 = new Car("Volvo", "v40", 0, false);
 		
 		System.out.println("\n** Car 1 **");
 		car1.printData();
 		car1.accelerate();
 		car1.brake();
 		car1.printData();
-		car1.refuel(0);
+		car1.refuel(10);
 		
 		System.out.println("\n** Car 2 **");
 		car2.printData();
 		car2.accelerate();
 		car2.brake();
 		car2.printData();
-		car2.refuel(40);
+		car2.refuel(45);
 	}
 
 }
@@ -48,9 +48,12 @@ class Car {
 	}
 	
 	public void accelerate() {
-		if (accelerateStatus) {
+		if (accelerateStatus && amountOfFuel > 0) {
 			System.out.println("Car is accelerating");
 			amountOfFuel--;
+		}
+		else {
+			System.out.println("Car is out of fuel, please refill!");
 		}
 	}
 	
